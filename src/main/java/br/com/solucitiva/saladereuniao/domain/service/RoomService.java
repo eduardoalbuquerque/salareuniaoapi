@@ -24,7 +24,9 @@ public class RoomService  implements IRoom{
     }
 
     @Override
-    public Room insert(Room room) {
+    public Room save(Room room) {
+        System.out.println(room.toString());
+        repository.save(room);
         return null;
     }
 

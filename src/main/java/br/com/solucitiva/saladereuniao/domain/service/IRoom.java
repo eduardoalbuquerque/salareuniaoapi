@@ -8,7 +8,7 @@ public interface IRoom {
 
     List<Room> listAll();
     Room findById(Long roomId);
-    Room insert(Room room);
+    Room save(Room room);
     void delete(Long roomId);
 
 }
